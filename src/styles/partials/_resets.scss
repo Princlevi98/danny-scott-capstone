@@ -10,15 +10,6 @@
 
 body {
   margin: 0;
-  //   typeface not yet chosen
-}
-
-// stretch body to keep footer at bottom
-#root {
-  @include flex(column);
-  min-height: 100vh;
-
-  main {
-    flex: 1;
-  }
+  font-family: Quicksand;
+  font-weight: 400;
 }
