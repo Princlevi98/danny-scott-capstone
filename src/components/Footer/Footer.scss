@@ -1,5 +1,8 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
 .footer {
-  background-color: #985fd3;
+  background-color: $secondary-background;
   position: absolute;
   bottom: 0;
   width: 100%;
