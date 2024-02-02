@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <Link className="header__logo-link">
+      <Link to="/" className="header__logo-link">
         <img className="header__logo" src={logo} alt="Charity logo" />
       </Link>
       <nav className="header__nav">
@@ -42,7 +42,7 @@ const Header = () => {
               <NavLink className="header__link--sub" to="#">
                 Order
               </NavLink>
-              <NavLink className="header__link--sub" to="#">
+              <NavLink className="header__link--sub" to="/about">
                 About
               </NavLink>
             </div>
