@@ -1,0 +1,29 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.content {
+  background-color: darkcyan;
+  height: 20rem;
+  border: 1px solid red;
+  padding: $padding-mobile;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__image-container {
+    width: 50%;
+  }
+  &__image {
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+  }
+  &__text-container {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+
+    border: 1px solid yellow;
+    border-radius: 4px;
+  }
+}
