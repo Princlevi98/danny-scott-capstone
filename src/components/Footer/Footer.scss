@@ -1,0 +1,23 @@
+.footer {
+  background-color: #985fd3;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  &__text {
+    margin: 0;
+    font-weight: 600;
+  }
+  &__icon-container {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
