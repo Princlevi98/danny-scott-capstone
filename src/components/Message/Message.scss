@@ -1,0 +1,17 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.message {
+  width: 100%;
+  background-color: bisque;
+  padding: 0 1rem;
+  &__constant {
+    margin: 0;
+  }
+  &__daily {
+    padding: 0.5rem 0.5rem;
+    width: 100%;
+    height: 6rem;
+    border: 1px solid $primary-text;
+  }
+}
