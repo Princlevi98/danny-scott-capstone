@@ -10,7 +10,6 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/" element={<Navigate to="/home" />} />
       </Routes>
       <Footer />
     </BrowserRouter>
