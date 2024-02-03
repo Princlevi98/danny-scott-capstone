@@ -36,7 +36,7 @@ const Header = () => {
           </NavLink>
           {menu && (
             <div className="header__dropdown-menu">
-              <NavLink className="header__link--sub" to="#">
+              <NavLink className="header__link--sub" to="/stock">
                 Stock
               </NavLink>
               <NavLink className="header__link--sub" to="#">
