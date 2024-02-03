@@ -1,2 +1,18 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
+
+.about {
+  &__container {
+    height: 30rem;
+    padding: $padding-mobile;
+  }
+  &__organisation-info {
+    height: 48%;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+  }
+  &__team-container {
+    height: 48%;
+    border: 1px solid black;
+  }
+}
