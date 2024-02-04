@@ -4,10 +4,16 @@
 .content {
   background-color: #e5e1da;
   padding: $padding-mobile;
+  @include tablet {
+    height: 30rem;
+  }
   &__container {
     display: flex;
     justify-content: space-between;
     height: 15rem;
+    @include tablet {
+      height: 100%;
+    }
   }
   &__image-container {
     width: 50%;
@@ -24,9 +30,15 @@
 
     border: 1px solid $primary-text;
     border-radius: 4px;
+    @include tablet {
+      padding: 1rem;
+    }
   }
   &__text {
     font-size: 0.75rem;
     margin: 0;
+    @include tablet {
+      font-size: 1.5rem;
+    }
   }
 }
