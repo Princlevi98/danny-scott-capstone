@@ -10,6 +10,17 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  @include tablet {
+    padding: 1rem;
+  }
+
+  &__text-container {
+    @include tablet {
+      width: 22rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
   &__text {
     margin: 0;
     font-weight: 600;

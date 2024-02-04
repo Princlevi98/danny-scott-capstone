@@ -8,11 +8,14 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__text-container">
-        <Link className="footer__page-link">
+        <Link to="/about" className="footer__page-link">
           <p className="footer__text">About us</p>
         </Link>
-        <span className="footer__email" href="#">
-          blabla@bla.bla
+        <span
+          className="footer__email"
+          href="mailto:EveryStepOfTheWay@gmail.com"
+        >
+          EveryStepOfTheWay@gmail.com
         </span>
       </div>
       <div className="footer__icon-container">
@@ -22,7 +25,7 @@ const Footer = () => {
         <a href="https://www.instagram.com/visiion.km/">
           <img src={instagram} alt="instagram icon" className="footer__icon" />
         </a>
-        <a href="#">
+        <a href="https://twitter.com/?lang=en">
           <img src={x} alt="x icon" className="footer__icon" />
         </a>
       </div>
