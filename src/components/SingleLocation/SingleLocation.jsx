@@ -7,7 +7,7 @@ const SingleLocation = () => {
   const params = useParams();
 
   const baseURL = process.env.REACT_APP_API_URL + "/location";
-  const [LocationDetails, setLocationDetails] = useState();
+  const [LocationDetails, setLocationDetails] = useState(null);
 
   const fetchLocation = async (id) => {
     try {
@@ -20,20 +20,19 @@ const SingleLocation = () => {
   };
   useEffect(() => {
     fetchLocation(params.id);
-  }, []);
+  }, [params.id]);
 
   if (!LocationDetails) {
-    return <p>Loading...</p>;
+    return <p>Select Location</p>;
   }
   console.log(LocationDetails);
   return (
     <main className="home">
       <div>
         {" "}
-        <p>{LocationDetails.contact}</p>
-        <p>{LocationDetails.location_name}</p>
-        <p>{LocationDetails.id}</p>
-        <p>{LocationDetails.number}</p>
+        <p>Borough: {LocationDetails.location_name}</p>
+        <p>Area lead: {LocationDetails.contact}</p>
+        <p>phone number: {LocationDetails.number}</p>
       </div>
     </main>
   );

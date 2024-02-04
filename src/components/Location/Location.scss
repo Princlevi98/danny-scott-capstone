@@ -1,0 +1,9 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.location {
+  &__names-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
