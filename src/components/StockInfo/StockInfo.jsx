@@ -29,14 +29,18 @@ const SingleLocationStock = () => {
   }
 
   return (
-    <main className="home">
-      <h2>Stock available in this Borough: {params.id}</h2>
+    <main className="stock-info">
+      <h2 className="stock-info__title">
+        {/* Stock available in this Borough: {params.id} */}
+      </h2>
       {locationStock.length === 0 ? (
-        <p>No stock items found for this location.</p>
+        <p className="stock-info__text">
+          {/* No stock items found for this location. */}
+        </p>
       ) : (
-        <ul>
+        <ul className="stock-info__list">
           {locationStock.map((item) => (
-            <li key={item.id}>
+            <li className="stock-info__list-item" key={item.id}>
               <strong>{item.item_name}</strong> - Quantity: {item.quantity}
             </li>
           ))}

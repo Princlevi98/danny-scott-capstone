@@ -1,23 +1,44 @@
 import "./Location.scss";
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { Link, NavLink } from "react-router-dom";
-import axios from "axios";
+import { useState } from "react";
+
+import { Link } from "react-router-dom";
 
 const SingleLocation = () => {
+  const [selectedLocation, setSelectedLocation] = useState(null);
+
+  const handleLocationClick = (locationId) => {
+    setSelectedLocation(locationId);
+  };
+
   return (
     <main className="location">
       <div className="location__names-container">
-        <Link to="/stock/1">
+        <Link
+          className={`location__link ${selectedLocation === 1 && "selected"}`}
+          to="/stock/1"
+          onClick={() => handleLocationClick(1)}
+        >
           <p className="location__name">Lambeth</p>
         </Link>
-        <Link to="/stock/2">
+        <Link
+          className={`location__link ${selectedLocation === 2 && "selected"}`}
+          to="/stock/2"
+          onClick={() => handleLocationClick(2)}
+        >
           <p className="location__name">Wandsworth</p>
         </Link>
-        <Link to="/stock/3">
+        <Link
+          className={`location__link ${selectedLocation === 3 && "selected"}`}
+          to="/stock/3"
+          onClick={() => handleLocationClick(3)}
+        >
           <p className="location__name">Battersea</p>
         </Link>
-        <Link to="/stock/4">
+        <Link
+          className={`location__link ${selectedLocation === 4 && "selected"}`}
+          to="/stock/4"
+          onClick={() => handleLocationClick(4)}
+        >
           <p className="location__name">Croydon</p>
         </Link>
       </div>

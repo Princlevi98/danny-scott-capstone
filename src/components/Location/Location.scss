@@ -2,6 +2,7 @@
 @use "../../styles/partials/variables" as *;
 
 .location {
+  padding-top: 1rem;
   &__names-container {
     display: flex;
     justify-content: space-between;
@@ -9,5 +10,25 @@
   &__name {
     font-size: 0.8rem;
     font-weight: bold;
+    margin: 0;
+    &.selected {
+      background-color: $primary-background;
+    }
+  }
+  &__link {
+    padding: 0.2rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    &:hover {
+      background-color: $hover;
+    }
+    &:active {
+      background-color: $active;
+    }
+    &.selected {
+      color: $primary-background;
+
+      background-color: $secondary-background;
+    }
   }
 }
