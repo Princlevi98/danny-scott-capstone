@@ -11,6 +11,9 @@
     font-size: 0.8rem;
     font-weight: bold;
     margin: 0;
+    @include tablet {
+      font-size: 1rem;
+    }
     &.selected {
       background-color: $primary-background;
     }
@@ -29,6 +32,11 @@
       color: $primary-background;
 
       background-color: $secondary-background;
+    }
+    @include tablet {
+      display: flex;
+      align-items: center;
+      height: 2.5rem;
     }
   }
 }

@@ -12,7 +12,7 @@ const Footer = () => {
           <p className="footer__text">About us</p>
         </Link>
         <span
-          className="footer__email"
+          className="footer__text"
           href="mailto:EveryStepOfTheWay@gmail.com"
         >
           EveryStepOfTheWay@gmail.com

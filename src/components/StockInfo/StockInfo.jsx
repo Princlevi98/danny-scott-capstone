@@ -30,13 +30,9 @@ const SingleLocationStock = () => {
 
   return (
     <main className="stock-info">
-      <h2 className="stock-info__title">
-        {/* Stock available in this Borough: {params.id} */}
-      </h2>
+      <h2 className="stock-info__title"></h2>
       {locationStock.length === 0 ? (
-        <p className="stock-info__text">
-          {/* No stock items found for this location. */}
-        </p>
+        <p className="stock-info__text"></p>
       ) : (
         <ul className="stock-info__list">
           {locationStock.map((item) => (

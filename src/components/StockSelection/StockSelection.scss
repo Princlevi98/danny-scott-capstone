@@ -1,0 +1,8 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+.stock {
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+  }
+}

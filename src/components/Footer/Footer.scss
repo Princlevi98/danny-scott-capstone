@@ -6,7 +6,7 @@
 
   bottom: 0;
   width: 100%;
-  padding: 0 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -16,7 +16,7 @@
 
   &__text-container {
     @include tablet {
-      width: 22rem;
+      width: 26rem;
       display: flex;
       justify-content: space-between;
     }
@@ -24,6 +24,10 @@
   &__text {
     margin: 0;
     font-weight: 600;
+    font-size: 0.6rem;
+    @include tablet {
+      font-size: 1.2rem;
+    }
   }
   &__icon-container {
     width: 30%;

@@ -27,7 +27,7 @@ const SingleLocation = () => {
   }
   console.log(LocationDetails);
   return (
-    <main className="home">
+    <main className="details">
       <div>
         {" "}
         <p>Borough: {LocationDetails.location_name}</p>

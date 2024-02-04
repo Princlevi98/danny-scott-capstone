@@ -32,13 +32,12 @@ const StockItem = ({
   };
 
   const decrementQuantity = () => {
-    // Ensure the quantity does not go below 1
     setQuantityToReduce(Math.max(quantityToReduce - 1, 1));
   };
 
   return (
     <div className="stock-item">
-      <h3>Selected Item: {itemName}</h3> {/* Added title for selected item */}
+      <h3>Selected Item: {itemName}</h3>
       <p>Current Quantity: {currentQuantity}</p>
       <div>
         <button onClick={decrementQuantity}>-</button>

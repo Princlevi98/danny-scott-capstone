@@ -1,5 +1,10 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
-.stock {
+.details {
+  @include desktop {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
 }

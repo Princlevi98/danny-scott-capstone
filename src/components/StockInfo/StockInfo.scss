@@ -2,10 +2,23 @@
 @use "../../styles/partials/variables" as *;
 
 .stock-info {
+  @include desktop {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
   &__title {
     font-size: 1.1rem;
   }
   &__list {
     padding: 0 0 0 1rem;
+  }
+  &__list-item {
+    @include tablet {
+      margin-bottom: 0.5rem;
+      @include desktop {
+        margin-bottom: 1rem;
+      }
+    }
   }
 }
