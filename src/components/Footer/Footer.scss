@@ -18,6 +18,9 @@
     width: 30%;
     display: flex;
     justify-content: space-between;
+    @include tablet {
+      justify-content: space-around;
+    }
   }
   &__icon {
     width: 1.5rem;
