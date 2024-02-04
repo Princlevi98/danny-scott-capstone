@@ -1,8 +1,8 @@
 import "./Stock.scss";
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+
 import Locations from "../../components/SingleLocation/SingleLocation";
 import Location from "../../components/Location/Location";
+import LocationStock from "../../components/StockInfo/StockInfo";
 
 const Stock = () => {
   return (
@@ -10,6 +10,7 @@ const Stock = () => {
       <div>
         <Location />
         <Locations />
+        <LocationStock />
       </div>
     </main>
   );

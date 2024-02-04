@@ -23,7 +23,7 @@ const SingleLocation = () => {
   }, [params.id]);
 
   if (!LocationDetails) {
-    return <p>Select Location</p>;
+    return <p>Select Location ...</p>;
   }
   console.log(LocationDetails);
   return (
