@@ -9,13 +9,16 @@ const SingleLocation = () => {
     <main className="location">
       <div className="location__names-container">
         <Link to="/stock/1">
-          <p>Lambeth</p>
+          <p className="location__name">Lambeth</p>
         </Link>
         <Link to="/stock/2">
-          <p>Wandsworth</p>
+          <p className="location__name">Wandsworth</p>
         </Link>
         <Link to="/stock/3">
-          <p>Battersea</p>
+          <p className="location__name">Battersea</p>
+        </Link>
+        <Link to="/stock/4">
+          <p className="location__name">Croydon</p>
         </Link>
       </div>
     </main>

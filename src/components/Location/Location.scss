@@ -6,4 +6,8 @@
     display: flex;
     justify-content: space-between;
   }
+  &__name {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
 }
