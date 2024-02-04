@@ -13,14 +13,14 @@ const Content = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(intervalId);
   }, []);
 
   return (
     <section className="content">
-      <section className="content__container">
+      <div className="content__container">
         <div className="content__image-container">
           {images.map((image, index) => (
             <img
@@ -36,11 +36,14 @@ const Content = () => {
         </div>
         <article className="content__text-container">
           <p className="content__text">
-            asdbckj asdbckj asdbckj
-            asdbckjsfdfsdsxsewdhdjcbkjdabcdsjhsdjhjkuibiub asdbckj v
+            In our latest endeavor, we collaborated with Brixton Soup Kitchen.
+            Together, we extended support by serving over a hundred individuals
+            in need in a single day. Additionally, we distributed an equal
+            number of survival hampers, contributing to our ongoing commitment
+            to make a positive impact in the community.
           </p>
         </article>
-      </section>
+      </div>
     </section>
   );
 };

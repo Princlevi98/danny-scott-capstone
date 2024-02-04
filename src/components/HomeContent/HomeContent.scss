@@ -2,13 +2,12 @@
 @use "../../styles/partials/variables" as *;
 
 .content {
-  background-color: darkcyan;
-  height: 20rem;
-  border: 1px solid red;
+  background-color: #e5e1da;
   padding: $padding-mobile;
   &__container {
     display: flex;
     justify-content: space-between;
+    height: 15rem;
   }
   &__image-container {
     width: 50%;
@@ -23,7 +22,11 @@
     display: flex;
     flex-wrap: wrap;
 
-    border: 1px solid yellow;
+    border: 1px solid $primary-text;
     border-radius: 4px;
+  }
+  &__text {
+    font-size: 0.75rem;
+    margin: 0;
   }
 }
