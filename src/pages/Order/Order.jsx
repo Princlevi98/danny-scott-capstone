@@ -1,11 +1,13 @@
 import "./Order.scss";
-import OrderStock from "../../components/OrderStock/OrderStock";
+import StockItem from "../../components/OrderStock/OrderStock";
+import StockSelection from "../../components/StockSelection/StockSelection";
 
 const Order = () => {
   return (
     <main className="order">
       <div>
-        <OrderStock />
+        <StockSelection />
+        <StockItem />
       </div>
     </main>
   );
