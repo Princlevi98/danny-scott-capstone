@@ -3,7 +3,7 @@
 
 .about {
   &__container {
-    height: 30rem;
+    height: 36rem;
     padding: $padding-mobile;
   }
   &__organisation-info {
@@ -14,5 +14,8 @@
   &__team-container {
     height: 48%;
     border: 1px solid black;
+  }
+  &__text {
+    margin: 0;
   }
 }
