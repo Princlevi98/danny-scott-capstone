@@ -22,7 +22,7 @@ const Footer = () => {
         <a href="https://en-gb.facebook.com/">
           <img src={facebook} alt="facebook icon" className="footer__icon" />
         </a>
-        <a href="https://www.instagram.com/visiion.km/">
+        <a href="https://www.instagram.com/everystep_ofthewayforyou?igsh=a3ZwOHdydjJheTZ5&utm_source=qr">
           <img src={instagram} alt="instagram icon" className="footer__icon" />
         </a>
         <a href="https://twitter.com/?lang=en">

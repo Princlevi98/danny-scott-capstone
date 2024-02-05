@@ -20,6 +20,9 @@
   &__image-container {
     width: 50%;
     height: 65%;
+    @include tablet {
+      height: 85%;
+    }
   }
   &__image {
     height: 100%;
@@ -35,6 +38,7 @@
     border-radius: 4px;
     @include tablet {
       padding: 1rem;
+      height: 85%;
     }
   }
   &__text {
