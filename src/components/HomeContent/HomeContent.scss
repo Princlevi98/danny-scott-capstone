@@ -4,19 +4,22 @@
 .content {
   background-color: #e5e1da;
   padding: $padding-mobile;
+  height: 26rem;
   @include tablet {
     height: 30rem;
   }
   &__container {
     display: flex;
     justify-content: space-between;
-    height: 15rem;
+    align-items: center;
+    height: 100%;
     @include tablet {
       height: 100%;
     }
   }
   &__image-container {
     width: 50%;
+    height: 65%;
   }
   &__image {
     height: 100%;
@@ -27,7 +30,7 @@
     width: 45%;
     display: flex;
     flex-wrap: wrap;
-
+    height: 65%;
     border: 1px solid $primary-text;
     border-radius: 4px;
     @include tablet {
