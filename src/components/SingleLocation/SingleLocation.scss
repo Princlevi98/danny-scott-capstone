@@ -2,6 +2,10 @@
 @use "../../styles/partials/variables" as *;
 
 .details {
+  @include tablet {
+    display: flex;
+    justify-content: center;
+  }
   @include desktop {
     margin-top: 2rem;
     display: flex;

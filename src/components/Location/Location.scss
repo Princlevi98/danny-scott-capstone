@@ -6,6 +6,9 @@
   &__names-container {
     display: flex;
     justify-content: space-between;
+    @include tablet {
+      width: 30rem;
+    }
   }
   &__name {
     font-size: 0.8rem;

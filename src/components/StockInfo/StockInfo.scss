@@ -2,10 +2,12 @@
 @use "../../styles/partials/variables" as *;
 
 .stock-info {
-  @include desktop {
-    margin-top: 2rem;
+  @include tablet {
     display: flex;
     justify-content: center;
+    @include desktop {
+      margin-top: 2rem;
+    }
   }
   &__title {
     font-size: 1.1rem;
