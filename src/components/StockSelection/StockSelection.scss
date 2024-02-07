@@ -1,6 +1,22 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
-.stock {
+.order-stock {
+  &__location {
+    // padding: 0.2rem;
+    // border: 1px solid black;
+    // border-radius: 4px;
+    // &:hover {
+    //   background-color: $hover;
+    // }
+    // &:active {
+    //   background-color: red;
+    // }
+    // &.selected {
+    //   color: $primary-background;
+
+    //   background-color: blue;
+    // }
+  }
   @include tablet {
     display: flex;
     justify-content: space-around;

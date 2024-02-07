@@ -56,16 +56,20 @@ const StockSelection = () => {
   useEffect(() => {}, [selectedItem]);
 
   return (
-    <main className="stock">
-      <h2 className="stock__title">Select a Location</h2>
-      {locations.map((location) => (
-        <Link to={`/order/${location.id}`} key={location.id}>
-          <button
-            className="stock__location"
+    <main className="order-stock">
+      <h2 className="order-stock__title">Select a Location</h2>
+      {locations.map((location, index) => (
+        <Link
+          to={`/order/${location.id}`}
+          key={location.id}
+          className={`order-stock__location order-stock__location-${index} && selected`}
+        >
+          {/* <button
+            
             onClick={() => handleLocationSelect(location.id)}
-          >
-            {location.location_name}
-          </button>
+          > */}
+          {location.location_name}
+          {/* </button> */}
         </Link>
       ))}
 
