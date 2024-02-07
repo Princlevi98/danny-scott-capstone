@@ -30,9 +30,15 @@ const SingleLocation = () => {
     <main className="details">
       <div>
         {" "}
-        <p>Borough: {LocationDetails.location_name}</p>
-        <p>Area lead: {LocationDetails.contact}</p>
-        <p>phone number: {LocationDetails.number}</p>
+        <p>
+          <strong>Borough</strong>: {LocationDetails.location_name}
+        </p>
+        <p>
+          <strong>Area lead</strong>: {LocationDetails.contact}
+        </p>
+        <p>
+          <strong>phone number</strong>: {LocationDetails.number}
+        </p>
       </div>
     </main>
   );

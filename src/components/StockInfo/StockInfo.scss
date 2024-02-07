@@ -2,6 +2,7 @@
 @use "../../styles/partials/variables" as *;
 
 .stock-info {
+  background-color: $content-background;
   display: flex;
   justify-content: center;
   @include tablet {

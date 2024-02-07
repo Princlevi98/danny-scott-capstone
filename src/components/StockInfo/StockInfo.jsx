@@ -38,6 +38,7 @@ const SingleLocationStock = () => {
           {locationStock.map((item) => (
             <li className="stock-info__list-item" key={item.id}>
               <strong>{item.item_name}</strong> - Quantity: {item.quantity}
+              <p>{item.description}</p>
             </li>
           ))}
         </ul>

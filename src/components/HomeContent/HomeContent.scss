@@ -2,7 +2,7 @@
 @use "../../styles/partials/variables" as *;
 
 .content {
-  background-color: #e5e1da;
+  background-color: $content-background;
   padding: $padding-mobile;
   height: 32rem;
   @include tablet {
