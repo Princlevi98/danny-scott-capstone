@@ -2,6 +2,7 @@ import "./StockSelection.scss";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import StockItem from "../OrderStock/OrderStock";
+import { Link } from "react-router-dom";
 
 const StockSelection = () => {
   const [locations, setLocations] = useState([]);
@@ -58,13 +59,14 @@ const StockSelection = () => {
     <main className="stock">
       <h2 className="stock__title">Select a Location</h2>
       {locations.map((location) => (
-        <button
-          className="stock__location"
-          key={location.id}
-          onClick={() => handleLocationSelect(location.id)}
-        >
-          {location.location_name}
-        </button>
+        <Link to={`/order/${location.id}`} key={location.id}>
+          <button
+            className="stock__location"
+            onClick={() => handleLocationSelect(location.id)}
+          >
+            {location.location_name}
+          </button>
+        </Link>
       ))}
 
       {selectedLocation && (
