@@ -1,2 +1,8 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
+
+.select-item {
+  &__list-item {
+    list-style: none;
+  }
+}

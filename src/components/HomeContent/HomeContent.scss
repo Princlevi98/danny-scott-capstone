@@ -4,7 +4,7 @@
 .content {
   background-color: #e5e1da;
   padding: $padding-mobile;
-  height: 26rem;
+  height: 32rem;
   @include tablet {
     height: 30rem;
     @include desktop {
@@ -45,7 +45,7 @@
     }
   }
   &__text {
-    font-size: 0.75rem;
+    font-size: 1rem;
     margin: 0;
     @include tablet {
       font-size: 1.5rem;

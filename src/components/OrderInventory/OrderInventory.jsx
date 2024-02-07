@@ -1,6 +1,7 @@
 import "./OrderInventory.scss";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 const Orderquantity = () => {
@@ -28,16 +29,18 @@ const Orderquantity = () => {
   }
 
   return (
-    <main className="stock-info">
-      <h2 className="stock-info__title"></h2>
+    <main className="select-item">
+      <h2 className="select-item__title"></h2>
       {locationStock.length === 0 ? (
-        <p className="stock-info__text"></p>
+        <p className="select-item__text"></p>
       ) : (
-        <ul className="stock-info__list">
+        <ul className="select-item__list">
           {locationStock.map((item) => (
-            <li className="stock-info__list-item" key={item.id}>
-              <strong>{item.item_name}</strong> - Quantity: {item.quantity}
-            </li>
+            <Link to="">
+              <li className="select-item__list-item" key={item.id}>
+                <strong>{item.item_name}</strong> - Quantity: {item.quantity}
+              </li>
+            </Link>
           ))}
         </ul>
       )}
