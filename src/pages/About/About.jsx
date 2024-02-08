@@ -1,4 +1,5 @@
 import "./About.scss";
+import image from "../../assets/images/Charity-scaled.jpeg";
 
 const About = () => {
   return (
@@ -17,10 +18,7 @@ const About = () => {
           </p>
         </article>
         <article className="about__team-container">
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+          <img src={image} alt="" className="about__image" />
         </article>
       </div>
     </section>

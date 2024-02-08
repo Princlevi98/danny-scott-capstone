@@ -1,11 +1,12 @@
 import "./HomeContent.scss";
 import { useState, useEffect } from "react";
-import imageOne from "../../assets/images/charity-image.jpeg";
+import imageOne from "../../assets/images/hampers.jpeg";
 import imageTwo from "../../assets/images/bundles.jpeg";
 import imageThree from "../../assets/images/group.jpeg";
 import imageFour from "../../assets/images/soup-kitchen.jpeg";
+import imageFive from "../../assets/images/school.jpeg";
 
-const images = [imageOne, imageTwo, imageThree, imageFour];
+const images = [imageOne, imageTwo, imageThree, imageFour, imageFive];
 
 const Content = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -20,6 +21,11 @@ const Content = () => {
 
   return (
     <section className="content">
+      <div className="content__title-container">
+        <p className="content__title">
+          <strong>Get to know us</strong>
+        </p>
+      </div>
       <div className="content__container">
         <div className="content__image-container">
           {images.map((image, index) => (

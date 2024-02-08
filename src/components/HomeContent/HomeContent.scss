@@ -51,4 +51,11 @@
       font-size: 1.5rem;
     }
   }
+  &__title-container {
+    display: flex;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 1.5rem;
+  }
 }
